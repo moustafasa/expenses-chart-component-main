@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Manrope:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- normalise file -->
+    <link rel="stylesheet" href="css/normalise.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <h1>expenses chart webpage</h1>
+    <div class="container">
+      <header>
+        <div class="balance">
+          <span class="label">My balance</span>
+          <span class="value">$921.48</span>
+        </div>
+        <div class="logo">
+          <img src="images/logo.svg" alt="" />
+        </div>
+      </header>
+      <div class="body">
+        <h2>Spending - Last 7 days</h2>
+        <div class="chart"></div>
+      </div>
+      <footer>
+        <div class="this-month">
+          <span class="label">Total this month</span>
+          <span class="value">$478.33 </span>
+        </div>
+        <div class="last-month">
+          <span class="value"> +2.4% </span>
+          <span class="label"> from last month </span>
+        </div>
+      </footer>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/moustafasa/expenses-chart-component-main"
+        >Moustafa saad</a
+      >.
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
